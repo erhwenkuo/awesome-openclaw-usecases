@@ -32,3 +32,4 @@
 |[每日 Reddit 摘要](./usecasses/daily-reddit-digest.md)|根據偏好自動總結關注的 subreddit。|資訊降噪|每日的生產問題的摘要|
 |[每日 YouTube 摘要](./usecasses/daily-youtube-digest.md)|取得追蹤頻道新影片的文字摘要|不用看影片就知道講了啥|每日會議的文字摘要|
 |[X 帳號分析](./usecasses/x-account-analysis.md)|對 X/Twitter 帳號進行定性分析|社媒營運必備|外部資訊匯整情報收集|
+|[多資料源科技新聞摘要](./usecasses/multi-source-tech-news-digest.md)|透過自然語言自動聚合並提供來自 109 個以上來源（RSS,Twitter/X,GitHub,網路搜尋）的高品質科技新聞。|資訊獵人的雷達|外部資訊匯整情報收集|
