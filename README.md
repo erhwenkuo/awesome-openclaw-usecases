@@ -23,7 +23,7 @@
 >
 > 建議參考每一個 Skill 在 [ClawHub](https://clawhub.ai/) 上的 Security Scan 的報告與審閱 Skill的內容與相關的 scripts 來決定是否應用該案例。
 >
-> 
+> ![](./assets/skill_scan.png) 
 
 ## Social Media
 
