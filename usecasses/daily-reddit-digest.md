@@ -12,11 +12,11 @@
 > 此模式為唯讀模式，不會進行任何發佈、投票或留言。
 
 
-##　Skills you Need
+## Skills you Need
 
 [reddit-readonly](https://clawhub.ai/buksan1950/reddit-readonly) skill. 它不需要特別的身份驗證。
 
-##　How to Set it Up
+## How to Set it Up
 
 ### Method 1
 
