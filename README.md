@@ -24,3 +24,11 @@
 > 建議參考每一個 Skill 在 [ClawHub](https://clawhub.ai/) 上的 Security Scan 的報告與審閱 Skill的內容與相關的 scripts 來決定是否應用該案例。
 >
 > 
+
+## Social Media
+
+| 用例名|    說明      |  亮點 　| 聯想/延伸  |
+|------|-------------|--------|-----------|
+|[每日 Reddit 摘要](./usecasses/daily-reddit-digest.md)|根據偏好自動總結關注的 subreddit。|資訊降噪|每日的生產問題的摘要|
+|[每日 YouTube 摘要](./usecasses/daily-youtube-digest.md)|取得追蹤頻道新影片的文字摘要|不用看影片就知道講了啥|每日會議的文字摘要|
+|[X 帳號分析](./usecasses/x-account-analysis.md)|對 X/Twitter 帳號進行定性分析|社媒營運必備|外部資訊匯整情報收集|
