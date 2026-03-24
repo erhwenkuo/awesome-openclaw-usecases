@@ -99,6 +99,8 @@ Every day at 5pm, run this process and give me the digest.
 每天下午 5 點，運行此流程並向我提供摘要。
 ```
 
+**Openclaw chat 截圖**:
+
 ![](./assets/daily-reddit-digest/chat-01.png)
 
 ![](./assets/daily-reddit-digest/chat-02.png)

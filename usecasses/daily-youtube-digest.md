@@ -155,6 +155,8 @@ Save my channel list to memory so I can add/remove channels later.
 將頻道清單儲存到記憶體中，以便日後新增/刪除頻道。
 ```
 
+**Openclaw chat 截圖**:
+
 ![](./assets/daily-youtube-digest/chat-06.png)
 
 ![](./assets/daily-youtube-digest/chat-07.png)
