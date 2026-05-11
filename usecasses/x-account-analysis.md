@@ -14,7 +14,10 @@
 
 ## Skills you Need
 
-[bird-twitter](https://clawhub.ai/chuhuilove/bird-twitter) skill. 這個 skill 是基於 [bird](https://github.com/jawond/bird) 的 Twitter/X CLI 封裝——發布推文、回覆、閱讀、搜尋和管理你的時間軸。快速的基於 GraphQL 的 X CLI。。
+選擇一種 X/Twitter 路徑：
+
+- [bird-twitter](https://clawhub.ai/chuhuilove/bird-twitter) skill。這個 skill 是基於 [bird](https://github.com/jawond/bird) 的 Twitter/X CLI 封裝，支援發布推文、回覆、閱讀、搜尋和管理你的時間軸。
+- [TweetClaw](https://github.com/Xquik-dev/tweetclaw)，OpenClaw 的 Xquik 結構化端點插件。可用 `openclaw plugins install @xquik/tweetclaw` 安裝。
 
 ## How to Set it Up
 
@@ -86,6 +89,34 @@ npx clawhub@latest install <skill-slug>
 
 ![](./assets/x-account-analysis/setup_credential.png)
 
+### Method 3
+
+透過 TweetClaw 使用結構化 API 路徑。
+
+這條路徑適合不想在聊天記錄中貼上 Cookie 或瀏覽器 session 資料的使用者。請先在 Xquik dashboard 產生 API key，然後用 OpenClaw config 保存，不要直接貼到對話中：
+
+```bash
+openclaw plugins install @xquik/tweetclaw
+openclaw config set plugins.entries.tweetclaw.config.apiKey "$XQUIK_API_KEY"
+openclaw config set tools.alsoAllow '["explore", "tweetclaw"]'
+```
+
+TweetClaw 可讓 OpenClaw 使用結構化呼叫完成這些工作：
+
+- 搜尋推文與推文回覆，整理帳號主題與互動模式。
+- 匯出 follower 或 following 清單，做受眾分群。
+- 監控推文、提及、回覆、引用和轉推，並發送 webhook-style alerts。
+- 草擬 post tweets 或 post tweet replies，並在任何寫入前要求明確確認。
+
+範例 prompt：
+
+```bash
+Use TweetClaw to analyze my last 200 tweets and replies.
+Group posts by topic, identify which hooks performed best,
+summarize follower segments, and suggest 5 post drafts.
+Do not post anything unless I approve the exact text first.
+```
+
 
 ## How to Use it
 
@@ -124,5 +155,4 @@ Save my preference as rules in the memory to use for better analysis curation.
 ![](./assets/x-account-analysis/x-analysis-01.png)
 
 ![](./assets/x-account-analysis/x-analysis-02.png)
-
 
